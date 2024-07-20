@@ -1,0 +1,19 @@
+{
+  "name": "playwright-quest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.10",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^3.0.0-beta.6"
+  },
+  "scripts": {
+    "test": "npm run playwright-test && npm run allure",
+    "playwright-test": "playwright test",
+    "allure": "npm run allure-generate && npm run allure-open",
+    "allure-generate": "allure generate allure-results -o allure-report --clean",
+    "allure-open": "allure open allure-report"
+  }
+}

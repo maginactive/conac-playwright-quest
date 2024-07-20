@@ -1,0 +1,11 @@
+node_modules/
+/test-results/
+test-results
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+tests/random-loading-site
+tests/quests
+allure-results
+allure-report
+.github
