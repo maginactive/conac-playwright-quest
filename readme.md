@@ -1,14 +1,14 @@
 ## I. Required software
 - Node js -> v.14 or above
 - VS Code
-- Playwright Vs Code Extension
+- Playwright
 
 ## II. Preparation
 - Clone the repository: git clone https://github.com/magnus-mfj/conac-playwright-quest
-- Open the Project: Launch VS Code and open the project folder.
+- Open the Project: Launch VS Code and navigate to the project folder.
 - Install Dependencies: 
     + Open the terminal in VS Code
-    + Run yarn install to install all the dependencies.
+    + Run `yarn install` to install all the dependencies.
 
 ## III. Run test
 - Open Test File: 3.searchText.spec.ts

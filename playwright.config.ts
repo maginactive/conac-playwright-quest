@@ -1,5 +1,4 @@
 import { defineConfig, devices } from "@playwright/test";
-import os from "os";
 
 /**
  * Read environment variables from file.
@@ -18,29 +17,9 @@ export default defineConfig({
   testMatch: ["tests/3.searchText.spec.ts"],
 
   timeout: 20000,
-  /* Run tests in files in parallel */
-  fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!process.env.CI,
-  /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ["line"],
-    // ['dot'],
-    //['list', { printSteps: true }],
-    [
-      "blob",
-      {
-        outputDir: "reports/blob",
-        fileName: `blob-report-${os.platform()}.zip`,
-      },
-    ],
-
-    //html report way 2: losing html structure here
-
     [
       "html",
       {
