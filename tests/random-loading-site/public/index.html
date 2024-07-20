@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Dynamic Loading</title>
+  <link href="/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div id="content" class="large-12 columns">
+        <script>
+          let randomDelay;
+
+          $(function(){
+            $('#start button').click(function(){
+              $('#start').hide();
+              $('#loading').show();
+              
+              // Generate a random delay between 5s and 20s
+              const minDelay = 2000;
+              const maxDelay = 20000;
+              randomDelay = Math.floor(Math.random() * (maxDelay - minDelay + 1)) + minDelay;
+              
+              setTimeout(function() {
+                $('#loading').hide();
+                $('#finish').show();
+                $('#guess-time').show();
+              }, randomDelay);
+            });
+
+            $('#guess-time button').click(function(){
+              $('#actual-time').html(`<strong>${(randomDelay / 1000).toFixed(3)}</strong> seconds`);
+              $('#mission-completed').show();
+              $('#restart').show();
+            });
+
+            $('#restart button').click(function(){
+              location.reload(); // Reload the page to reset
+            });
+          });
+        </script>
+
+        <div class='example'>
+          <h1 class="minigame-title">Minigame 1: Guess time of loader</h1>
+          <br>
+          <div id='start'>
+            <button>Start</button>
+          </div>
+          <div id='loading' style='display:none'>
+            <span>Loading...</span><img src='/img/ajax-loader.gif' alt='Loading'>
+          </div>
+          <div id='finish' style='display:none'>
+            <div id='guess-time' style='display:none'>
+              <button>Guess how long does it take for loading animation?</button>
+              <div id="actual-time" style="margin-top: 10px;"></div>
+            </div>
+            <div id='mission-completed' style='display:none'>
+              <h1>Mission completed!</h1>
+            </div>
+            <div id='restart' style='display:none'>
+              <button>Restart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='page-footer' class="row">
+      <div class="large-4 large-centered columns">
+        <hr>
+        <div style="text-align: center;">Powered by <a target="_blank" href="https://careers.moneyforward.vn/about-us#about-mfv">Money Forward Vietnam</a></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

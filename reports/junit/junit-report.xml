@@ -1,74 +1,11 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="6.077382000000001">
-<testsuite name="tests/presentation/2.visual_test.spec.ts" timestamp="2024-07-20T15:36:40.882Z" hostname="chromium" tests="1" failures="1" skipped="0" time="5.325" errors="0">
-<testcase name="screenshot test" classname="tests/presentation/2.visual_test.spec.ts" time="5.325">
-<failure message="2.visual_test.spec.ts:3:5 screenshot test" type="FAILURE">
-<![CDATA[  [chromium] › tests/presentation/2.visual_test.spec.ts:3:5 › screenshot test ──────────────────────
-
-    Error: Screenshot comparison failed:
-
-      Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.
-
-    Expected: /Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/tests/presentation/2.visual_test.spec.ts-snapshots/screenshot-test-1-chromium-darwin.png
-    Received: /Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-actual.png
-        Diff: /Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-diff.png
-
-    Call log:
-      - expect.toHaveScreenshot with timeout 5000ms
-      -   verifying given screenshot expectation
-      - taking page screenshot
-      -   disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.
-      - waiting 100ms before taking screenshot
-      - taking page screenshot
-      -   disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - captured a stable screenshot
-      - Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.
-
-
-      3 | test('screenshot test', async ({ page }) => {
-      4 |   await page.goto('https://corp.moneyforward.com/en/aboutus/mission/');
-    > 5 |   await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
-        |                      ^
-      6 | });
-
-        at /Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/tests/presentation/2.visual_test.spec.ts:5:22
-
-    attachment #1: screenshot-test-1-expected.png (image/png) ──────────────────────────────────────
-    tests/presentation/2.visual_test.spec.ts-snapshots/screenshot-test-1-chromium-darwin.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: screenshot-test-1-actual.png (image/png) ────────────────────────────────────────
-    test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-actual.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: screenshot-test-1-diff.png (image/png) ──────────────────────────────────────────
-    test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-diff.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/tests-presentation-2.visual_test-screenshot-test-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/tests-presentation-2.visual_test-screenshot-test-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="3.3940390000000003">
+<testsuite name="tests/3.searchText.spec.ts" timestamp="2024-07-20T16:06:15.039Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.744" errors="0">
+<testcase name="Search for &quot;money forward&quot; on Google, tab, and click on the first search result" classname="tests/3.searchText.spec.ts" time="2.744">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../../tests/presentation/2.visual_test.spec.ts-snapshots/screenshot-test-1-chromium-darwin.png]]
+[[ATTACHMENT|../../test-results/tests-3.searchText-Search--3926e--on-the-first-search-result-chromium/test-finished-1.png]]
 
-[[ATTACHMENT|../../test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-actual.png]]
-
-[[ATTACHMENT|../../test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-diff.png]]
-
-[[ATTACHMENT|../../test-results/tests-presentation-2.visual_test-screenshot-test-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../../test-results/tests-presentation-2.visual_test-screenshot-test-chromium/video.webm]]
+[[ATTACHMENT|../../test-results/tests-3.searchText-Search--3926e--on-the-first-search-result-chromium/video.webm]]
 ]]>
 </system-out>
 </testcase>

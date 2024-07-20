@@ -68,7 +68,7 @@
         "testDir": "/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest",
         "testIgnore": [],
         "testMatch": [
-          "tests/presentation/2.visual_test.spec.ts"
+          "tests/3.searchText.spec.ts"
         ],
         "timeout": 20000
       }
@@ -81,14 +81,14 @@
   },
   "suites": [
     {
-      "title": "tests/presentation/2.visual_test.spec.ts",
-      "file": "tests/presentation/2.visual_test.spec.ts",
+      "title": "tests/3.searchText.spec.ts",
+      "file": "tests/3.searchText.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "screenshot test",
-          "ok": false,
+          "title": "Search for \"money forward\" on Google, tab, and click on the first search result",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -100,71 +100,32 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 5325,
-                  "error": {
-                    "message": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.\n\nExpected: \u001b[33m/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/tests/presentation/2.visual_test.spec.ts-snapshots/screenshot-test-1-chromium-darwin.png\u001b[39m\nReceived: \u001b[33m/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-actual.png\u001b[39m\n    Diff: \u001b[33m/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-diff.png\u001b[39m\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot with timeout 5000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.\u001b[22m\n",
-                    "stack": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.\n\nExpected: \u001b[33m/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/tests/presentation/2.visual_test.spec.ts-snapshots/screenshot-test-1-chromium-darwin.png\u001b[39m\nReceived: \u001b[33m/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-actual.png\u001b[39m\n    Diff: \u001b[33m/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-diff.png\u001b[39m\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot with timeout 5000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.\u001b[22m\n\n    at /Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/tests/presentation/2.visual_test.spec.ts:5:22",
-                    "location": {
-                      "file": "/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/tests/presentation/2.visual_test.spec.ts",
-                      "column": 22,
-                      "line": 5
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m test(\u001b[32m'screenshot test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://corp.moneyforward.com/en/aboutus/mission/'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot({ maxDiffPixels\u001b[33m:\u001b[39m \u001b[35m100\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/tests/presentation/2.visual_test.spec.ts",
-                        "column": 22,
-                        "line": 5
-                      },
-                      "message": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.\n\nExpected: \u001b[33m/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/tests/presentation/2.visual_test.spec.ts-snapshots/screenshot-test-1-chromium-darwin.png\u001b[39m\nReceived: \u001b[33m/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-actual.png\u001b[39m\n    Diff: \u001b[33m/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-diff.png\u001b[39m\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot with timeout 5000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - Expected an image 1280px by 720px, received 1300px by 690px. 47194 pixels (ratio 0.06 of all image pixels) are different.\u001b[22m\n\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test(\u001b[32m'screenshot test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://corp.moneyforward.com/en/aboutus/mission/'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot({ maxDiffPixels\u001b[33m:\u001b[39m \u001b[35m100\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/tests/presentation/2.visual_test.spec.ts:5:22\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 2744,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-20T15:36:41.082Z",
+                  "startTime": "2024-07-20T16:06:15.256Z",
                   "attachments": [
-                    {
-                      "name": "screenshot-test-1-expected.png",
-                      "contentType": "image/png",
-                      "path": "/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/tests/presentation/2.visual_test.spec.ts-snapshots/screenshot-test-1-chromium-darwin.png"
-                    },
-                    {
-                      "name": "screenshot-test-1-actual.png",
-                      "contentType": "image/png",
-                      "path": "/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-actual.png"
-                    },
-                    {
-                      "name": "screenshot-test-1-diff.png",
-                      "contentType": "image/png",
-                      "path": "/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/screenshot-test-1-diff.png"
-                    },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/test-failed-1.png"
+                      "path": "/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-3.searchText-Search--3926e--on-the-first-search-result-chromium/test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-presentation-2.visual_test-screenshot-test-chromium/video.webm"
+                      "path": "/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/test-results/tests-3.searchText-Search--3926e--on-the-first-search-result-chromium/video.webm"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/mfv-hn-computer-0083/Downloads/automation-tut/playwright-quest/tests/presentation/2.visual_test.spec.ts",
-                    "column": 22,
-                    "line": 5
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "4426aef480e524ecbde4-9c601c40441c6d050244",
-          "file": "tests/presentation/2.visual_test.spec.ts",
+          "id": "ee9a10c51ff6cf4762ea-bbe8ce91eb9efcdef393",
+          "file": "tests/3.searchText.spec.ts",
           "line": 3,
           "column": 5
         }
@@ -173,11 +134,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-20T15:36:40.845Z",
-    "duration": 6077.3820000000005,
-    "expected": 0,
+    "startTime": "2024-07-20T16:06:14.998Z",
+    "duration": 3394.039,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

@@ -1,0 +1,120 @@
+/* Ensure the content only displays in the top half of the page */
+.container {
+  height: 50vh; /* Half the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+/* Style for the "Start" button */
+#start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#start button {
+  font-size: 3em; /* Slightly reduce font size */
+  padding: 8px 16px; /* Reduce padding */
+  background-color: #0e02f7f0; /* Background color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#start button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Style for the "Guess Time" button */
+#guess-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#guess-time button {
+  font-size: 2em; /* Font size for the Guess button */
+  padding: 8px 16px;
+  background-color: #28a745; /* Background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#guess-time button:hover {
+  background-color: #218838; /* Darker background on hover */
+}
+
+#guess-time #actual-time {
+  font-size: 1.5em; /* Font size for the actual time display */
+  font-weight: bold; /* Make the actual time bold */
+  margin-top: 10px; /* Space between button and text */
+}
+
+/* Style for the loading icon and text */
+#loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#loading img {
+  width: 30%; /* Adjust the width of the loading image */
+  margin-left: 10px; /* Space between text and image */
+}
+
+#loading span {
+  font-size: 3em; /* Adjust font size */
+}
+
+/* Style for the finish message */
+#finish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#finish h1 {
+  font-size: 3em; /* Large font size to match the Start button */
+}
+
+/* Style for the Restart button */
+#restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#restart button {
+  font-size: 2em; /* Font size for the Restart button */
+  padding: 8px 16px;
+  background-color: #dc3545; /* Background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#restart button:hover {
+  background-color: #c82333; /* Darker background on hover */
+}
+
+/* Style for the minigame title */
+.minigame-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}

@@ -13,9 +13,9 @@ import os from "os";
  */
 export default defineConfig({
   // testDir: "./tests/quests",
-  // testMatch: ["tests/presentation/1.dynamic_loading.spec.ts"],
-  testMatch: ["tests/presentation/2.visual_test.spec.ts"],
-  // testMatch: ["tests/presentation/3.hiddenOptions.spec.ts"],
+  // testMatch: ["tests/1.dynamic_loading.spec.ts"],
+  // testMatch: ["tests/2.visual_test.spec.ts"],
+  testMatch: ["tests/3.searchText.spec.ts"],
 
   timeout: 20000,
   /* Run tests in files in parallel */

@@ -4,7 +4,6 @@ test-results
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-tests/random-loading-site
 tests/quests
 allure-results
 allure-report
