@@ -20,8 +20,8 @@
               $('#loading').show();
               
               // Generate a random delay between 5s and 20s
-              const minDelay = 2000;
-              const maxDelay = 20000;
+              const minDelay = 1000;
+              const maxDelay = 2000;
               randomDelay = Math.floor(Math.random() * (maxDelay - minDelay + 1)) + minDelay;
               
               setTimeout(function() {
@@ -50,18 +50,15 @@
             <button>Start</button>
           </div>
           <div id='loading' style='display:none'>
-            <span>Loading...</span><img src='/img/ajax-loader.gif' alt='Loading'>
+            <span></span><img src='/img/cargando-loading.gif' alt='Loading'>
           </div>
           <div id='finish' style='display:none'>
             <div id='guess-time' style='display:none'>
               <button>Guess how long does it take for loading animation?</button>
               <div id="actual-time" style="margin-top: 10px;"></div>
             </div>
-            <div id='mission-completed' style='display:none'>
-              <h1>Mission completed!</h1>
-            </div>
             <div id='restart' style='display:none'>
-              <button>Restart</button>
+              <button>Want to replay? Click here!</button>
             </div>
           </div>
         </div>

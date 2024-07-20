@@ -11,12 +11,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%; /* Full width */
 }
 
 #start button {
   font-size: 3em; /* Slightly reduce font size */
   padding: 8px 16px; /* Reduce padding */
-  background-color: #0e02f7f0; /* Background color */
+  background-color: #f54f03; /* Background color */
   color: white; /* Text color */
   border: none; /* Remove border */
   border-radius: 5px; /* Rounded corners */
@@ -25,7 +26,7 @@
 }
 
 #start button:hover {
-  background-color: #0056b3; /* Darker background on hover */
+  background-color: #218838; /* Darker background on hover */
 }
 
 /* Style for the "Guess Time" button */
@@ -39,7 +40,7 @@
 #guess-time button {
   font-size: 2em; /* Font size for the Guess button */
   padding: 8px 16px;
-  background-color: #28a745; /* Background color */
+  background-color: #f54f03; /* Background color */
   color: white;
   border: none;
   border-radius: 5px;
@@ -52,7 +53,7 @@
 }
 
 #guess-time #actual-time {
-  font-size: 1.5em; /* Font size for the actual time display */
+  font-size: 8em; /* Font size for the actual time display */
   font-weight: bold; /* Make the actual time bold */
   margin-top: 10px; /* Space between button and text */
 }
@@ -100,7 +101,7 @@
 #restart button {
   font-size: 2em; /* Font size for the Restart button */
   padding: 8px 16px;
-  background-color: #dc3545; /* Background color */
+  background-color: #080808; /* Background color */
   color: white;
   border: none;
   border-radius: 5px;
@@ -109,7 +110,7 @@
 }
 
 #restart button:hover {
-  background-color: #c82333; /* Darker background on hover */
+  background-color: #218838; /* Darker background on hover */
 }
 
 /* Style for the minigame title */
